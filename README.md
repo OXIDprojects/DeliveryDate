@@ -3,22 +3,26 @@ Delivery Date
 Dieses Modul zeigt ein paar OXID Features und kann als Beispiel / Vorlage verwendet werden.  
 Du kannst dieses Modul frei kopieren und modifizieren. 
 
+
 Was ich alles in diesem Modul mache: 
-1.) Daten per Formular abfragen und bei der HTTP-User-Session hinterlegen. 
-2.) Diese Daten aus der Session herausholen und anzeigen
-3.) Diese Daten werden in der Datenbank Tabelle oxorder im neuen Feld oxdeldate gespeichert
-4.) Die Datenbank wird erweitert
-5.) Die Controllers des Checkout Processes: Schritt 3 (Payment) und Schritt 4 (Order) werden erweitert 
-6.) Das Model der order (oxorder) wird erweitert
+# Daten per Formular abfragen und bei der HTTP-User-Session hinterlegen. 
+# Diese Daten aus der Session herausholen und anzeigen
+# Diese Daten werden in der Datenbank Tabelle oxorder im neuen Feld oxdeldate gespeichert
+# Die Datenbank wird erweitert
+# Die Controllers des Checkout Processes: Schritt 3 (Payment) und Schritt 4 (Order) werden erweitert 
+# Das Model der order (oxorder) wird erweitert
 
 
-Beschreibung des Modules: 
+Anforderungen und Beschreibung: 
 ============
 Anforderung 1: Hinterlegen eines Wunsch-Lieferdatums bei der Bestellung. 
+
 Anforderung 2: Das Wunschlieferdatum ist entweder heute, wenn die Bestellung vor DEADLINE (z.B. 12 Uhr mittags) erfolgt, oder morgen, wenn heute nicht Freitag ist. (Auslieferung nur Mo-Fr.)
+
 Anforderung 3: Die Deadline soll über die Oxid-AdminGui einstellbar sein. 
 
-Dies ist z.B. Sinnvoll bei Lebensmittel-Händlern, welche die Ware immer vorrätig habe und zu einem bestimmten Termin ausliefern sollen. 
+
+Dies ist z.B. sinnvoll bei Lebensmittel-Händlern, welche die Ware immer vorrätig habe und zu einem bestimmten Termin ausliefern sollen. 
 
 Umsetzung: 
 ============
@@ -33,9 +37,9 @@ TODO:
 Es gibt noch folgende Dinge, welche noch umgesetzt werden müssen. 
 Vielleicht möchte ja jemand aus der Community dies beisteuern. 
 
- 1.) In der OXID Admin Gui muss das Lieferdatum innerhalb der Bestellung angezeigt werden. Wo es am Besten hinpasst oder ob man eine eigene Seite macht, weiß ich noch nicht. 
- 2.) Die Bestell-Historie muss natürlich auch angepasst werden. 
- 3.) Wenn kein Bestelldatum ausgewählt werden kann, (Freitags nach der Deadline 12.Uhr), dann muss der Bestellprozess abgebrochen werden. 
+# In der OXID Admin Gui muss das Lieferdatum innerhalb der Bestellung angezeigt werden. Wo es am Besten hinpasst oder ob man eine eigene Seite macht, weiß ich noch nicht. 
+# Die Bestell-Historie muss natürlich auch angepasst werden. 
+# Wenn kein Bestelldatum ausgewählt werden kann, (Freitags nach der Deadline 12.Uhr), dann muss der Bestellprozess abgebrochen werden. 
  
  
 NOTICE OF LICENSE
